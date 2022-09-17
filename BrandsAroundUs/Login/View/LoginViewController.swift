@@ -40,7 +40,7 @@ class LoginViewController: UIViewController , AlertPresenter{
     @IBAction func loginAction(_ sender: UIButton) {
         
         if let username = userNameTextField.text, username.isEmpty {
-            showCustomAlert(titleImage: UIImage(named: "BrandOPediaIcon"), title: "Error", message: "Please Enter username")
+            showCustomAlert(titleImage: UIImage(named: "BrandOPediaIcon"), title: "Error", message: "Please Enter Username")
             return
         } else if let password = passwordTextField.text, password.isEmpty {
             showCustomAlert(title: "Error", message: "Please Enter Password")
